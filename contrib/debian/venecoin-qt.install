@@ -1,0 +1,6 @@
+usr/local/bin/venecoin-qt usr/bin
+share/pixmaps/venecoin32.xpm usr/share/pixmaps
+share/pixmaps/venecoin16.xpm usr/share/pixmaps
+share/pixmaps/venecoin128.png usr/share/pixmaps
+debian/venecoin-qt.desktop usr/share/applications
+debian/venecoin-qt.protocol usr/share/kde4/services/

@@ -1,0 +1,11 @@
+[Protocol]
+exec=venecoin-qt '%u'
+protocol=venecoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

@@ -1,0 +1,69 @@
+1 habre powershell en el inicio 
+2 copia            wsl --install -d Ubuntu --name pc1      
+3 poner una nombre y después calve la clave no se ve cuando la pones
+4 escribe cd           luego enter 
+5 instala las dependencias por orden 
+
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y build-essential cmake git curl
+
+sudo apt install -y libssl-dev libboost-all-dev libdb-dev libdb++-dev libevent-dev
+
+sudo apt install -y libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools
+
+sudo apt install -y libtool autotools-dev automake pkg-config bsdmainutils libminiupnpc-dev libzmq3-dev libqrencode-dev
+
+
+
+
+
+6 después de copiar las dependencias pon tu contraseña para continuar 
+
+
+7 descomprime la carpeta en descargas  exactamente   queda si C:\Users\PC  si lo descomprimes en otro sitio cambia la ruta del código de abajo  por ejemplo esta descomprimido en descarga  C:\Users\PC\Downloads\venecoin  copia la ruta y la pones abajó
+quedaría asi    es ejemplo lo veras abjao 
+
+
+# Copia los archivos desde Windows (ajusta tu nombre de usuario "PC")
+cp -r /mnt/c/Users/PC/Downloads/venecoin/* ~/venecoinb/
+cd
+
+
+
+8 el de abajo esat configurado para descomprimir en  c/Users/PC/venecoin 
+
+
+
+
+
+
+
+........................................
+# Crea un directorio en WSL para venecoin
+mkdir -p ~/venecoinb
+
+# Copia los archivos desde Windows (ajusta tu nombre de usuario "PC")
+cp -r /mnt/c/Users/PC/venecoin/* ~/venecoinb/
+cd
+
+# Entra al directorio
+cd ~/venecoinb
+
+.......................................
+# Convierte archivos de Windows (CRLF) a Linux (LF)
+sudo apt install dos2unix -y  # Instala la herramienta si no la tienes
+find . -type f -exec dos2unix {} \;
+
+# Dale permisos de ejecución a los scripts
+chmod +x autogen.sh
+chmod +x configure
+
+
+./autogen.sh
+./configure --with-incompatible-bdb
+make -j$(nproc)
+
+...................................
+
+
+

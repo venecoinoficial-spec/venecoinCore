@@ -1,0 +1,15 @@
+--- a/qtbase/src/corelib/io/qfilesystemengine_win.cpp
++++ b/qtbase/src/corelib/io/qfilesystemengine_win.cpp
+@@ -631,9 +631,11 @@
+ #ifndef FILE_INFO_BY_HANDLE_CLASS
+ #define FILE_INFO_BY_HANDLE_CLASS 0
+ #endif
++#if !defined(_FILE_ID_INFO) && !defined(FILE_ID_INFO_DEFINED)
+ typedef struct _FILE_ID_INFO {
+     ULONGLONG VolumeSerialNumber;
+     FILE_ID_128 FileId;
+ } FILE_ID_INFO, *PFILE_ID_INFO;
++#endif
+ #endif
+ 
+ #ifndef GetFileInformationByHandleEx

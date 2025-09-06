@@ -1,0 +1,33 @@
+# /etc/conf.d/venecoind: config file for /etc/init.d/venecoind
+
+# Config file location
+#venecoinD_CONFIGFILE="/etc/venecoin/venecoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $venecoinD_USER)
+#venecoinD_PIDDIR="/var/run/venecoind"
+
+# What filename to give the pidfile
+#venecoinD_PIDFILE="${venecoinD_PIDDIR}/venecoind.pid"
+
+# Where to write venecoind data (be mindful that the blockchain is large)
+#venecoinD_DATADIR="/var/lib/venecoind"
+
+# User and group to own venecoind process
+#venecoinD_USER="venecoin"
+#venecoinD_GROUP="venecoin"
+
+# Path to venecoind executable
+#venecoinD_BIN="/usr/bin/venecoind"
+
+# Nice value to run venecoind under
+#venecoinD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+venecoinD_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for venecoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+venecoinD_SIGTERM_TIMEOUT=60

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=venecoin Core
+Comment=Connect to the venecoin P2P Network
+Comment[de]=Verbinde mit dem venecoin peer-to-peer Netzwerk
+Comment[fr]=venecoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=venecoin, eşten eşe kriptografik sanal para birimi
+Exec=venecoin-qt %u
+Terminal=false
+Type=Application
+Icon=venecoin128
+MimeType=x-scheme-handler/venecoin;
+Categories=Office;Finance;
