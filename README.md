@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/venecoin/venecoin/master/share/pixmaps/venecoin256.svg" alt="venecoin" width="256"/>
+<img src="https://raw.githubusercontent.com/venecoinoficial-spec/venecoinCore/main/venecoinico.png" alt="venecoin" width="256"/>
 <br/><br/>
 venecoin Core 
 </h1>
