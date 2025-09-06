@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/venecoin/venecoin/master/share/pixmaps/venecoin256.svg" alt="venecoin" width="256"/>
 <br/><br/>
-venecoin Core [DOGE, Ð]  
+venecoin Core 
 </h1>
 
 **IMPORTANT: Starting August 2024, the `master` branch has become the primary
