@@ -1,0 +1,2 @@
+# venecoinCore
+venecoin-src
